@@ -19,6 +19,20 @@ public class ArrayOperations {
         }
         return mx;
     }
+    public static int sumOfOdds( int[] a ){
+        int sum = 0;
+        for ( int i = 1; i < a.length; i+=2){
+            sum += a[ i ];
+        }
+        return sum;
+    }
+    public static int sumOfEvens( int[] a ){
+        int sum = 0;
+        for ( int i = 0; i < a.length; i+=2){
+            sum += a[ i ];
+        }
+        return sum;
+    }
     public static int findAverage( int [] givenArray)
     {
         int sum = 0;
