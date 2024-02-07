@@ -19,4 +19,24 @@ public class ArrayOperations {
         }
         return mx;
     }
+    public static int findAverage( int [] givenArray)
+    {
+        int sum = 0;
+        for ( int i : givenArray)
+        {
+            sum += i;
+        }
+        return sum / ( givenArray.length);
+    }
+    public static int [] differences( int [] givenArray)
+    {
+        int avg = findAverage( givenArray);
+        int [] differenceArray = new int [givenArray.length];
+        for ( int i = 0; i < givenArray.length; i++)
+        {
+            differenceArray[i] = givenArray[i] - avg;
+        }
+        return differenceArray;
+
+    }
 }
